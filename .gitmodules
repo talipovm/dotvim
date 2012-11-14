@@ -13,3 +13,15 @@
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = http://github.com/tpope/vim-surround
+[submodule "bundle/utl"]
+	path = bundle/utl
+	url = https://github.com/vim-scripts/utl.vim.git
+[submodule "bundle/project.tar.gz"]
+	path = bundle/project.tar.gz
+	url = https://github.com/vim-scripts/project.tar.gz.git
