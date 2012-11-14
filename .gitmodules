@@ -1,0 +1,12 @@
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "bundle/allfold"]
+	path = bundle/allfold
+	url = https://github.com/vim-scripts/allfold
+[submodule "bundle/Vim-R-plugin"]
+	path = bundle/Vim-R-plugin
+	url = https://github.com/jcfaria/Vim-R-plugin.git
+[submodule "bundle/screen"]
+	path = bundle/screen
+	url = https://github.com/ervandew/screen.git
