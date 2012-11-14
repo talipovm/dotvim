@@ -11,7 +11,7 @@
 	path = bundle/screen
 	url = https://github.com/ervandew/screen.git
 [submodule "vim-colors-solarized"]
-	path = vim-colors-solarized
+	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/solarized"]
 	path = bundle/solarized
