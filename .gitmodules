@@ -25,3 +25,9 @@
 [submodule "bundle/project.tar.gz"]
 	path = bundle/project.tar.gz
 	url = https://github.com/vim-scripts/project.tar.gz.git
+[submodule "bundle/python"]
+	path = bundle/python
+	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
+[submodule "bundle/vim-ipython"]
+	path = bundle/vim-ipython
+	url = https://github.com/ivanov/vim-ipython
