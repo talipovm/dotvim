@@ -93,4 +93,5 @@ set foldmethod=manual
 let AFB_allfold_full_disabled=1
 source $HOME/.vim/bundle/allfold/plugin/allfold_basic.vim
 
-let vimrplugin_applescript = 0
+let vimrplugin_applescript = 0 " R-Vim plugin
+
