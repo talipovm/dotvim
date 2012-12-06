@@ -1,8 +1,4 @@
-" An example for a vimrc file.
-
 " When started as "evim", evim.vim will already have done these settings.
-"
-
 if v:progname =~? "evim"
   finish
 endif
@@ -15,22 +11,22 @@ call pathogen#helptags()
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-set ai
-set history=500		" keep 500 lines of command line history
-set ruler		    " show the cursor position all the time
-set showcmd		    " display incomplete commands
-set incsearch		" do incremental searching
-set nowrap
+set autoindent
+set history=500     " keep 500 lines of command line history
+set ruler           " show the cursor position all the time
+set showcmd         " display incomplete commands
+set incsearch       " do incremental searching
+set nowrap          " Don't wrap long lines
 set smarttab
-set expandtab "Ставим табы пробелами
-set number
-set foldcolumn=1
+set expandtab       " Ставим табы пробелами
+set number          " Show line numbers
+set foldcolumn=1    " Show fold column
 set noswapfile
-set ignorecase
-set modelines=5
-"set paste
-set hlsearch
-set background=dark
+set ignorecase      " ignore case during search
+set smartcase       " ignore case only for lowercase patterns
+set modelines=5     " First 5 and last 5 lines might contain vim code
+set hlsearch        " Highlight search
+set background=dark " Set dark backgroup (another option is light)
 
 " Python specific
 set tabstop=4       
@@ -40,12 +36,10 @@ let python_highlight_all = 1
 
 " Coloration
 syntax on
-colorscheme darkblue
+colorscheme Peacock
 
 
-
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
+set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
 " Backup
 set backup
@@ -57,32 +51,25 @@ au BufRead,BufNewFile *.inp set filetype=gamess
 au BufRead,BufNewFile *.gms set filetype=log-gamess
 au! Syntax gamess source $HOME/.vim/syntax/gamess.vim
 au! Syntax log-gamess source $HOME/.vim/syntax/log-gamess.vim
-"au! Syntax python source ~/.vim/syntax/python.vim
-
-
 
 filetype plugin indent on
-
-
 
 "
 " Hotkeys
 "
 "
 " To make jumping between buffers easier
-map <Tab> <C-W>W
+nmap <Tab> <C-W>W
 
 " Press Space to turn off highlighting and clear any message already displayed
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 
-
 "
 " Saves and loads folding after restart Vim
 "
-autocmd BufWinLeave ?* mkview
-autocmd BufWinEnter ?* silent loadview
-
+"autocmd BufWinLeave ?* mkview
+"autocmd BufWinEnter ?* silent loadview
 
 
 "
@@ -94,4 +81,3 @@ let AFB_allfold_full_disabled=1
 source $HOME/.vim/bundle/allfold/plugin/allfold_basic.vim
 
 let vimrplugin_applescript = 0 " R-Vim plugin
-

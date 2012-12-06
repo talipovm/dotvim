@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/talipovmr/q-research/Proteome-SNO/Mouse/asapy'
 let g:netrw_dirhist_2='/Volumes/HDD/Users/talipovmr/.vim/bundle/vim-ipython/ftplugin/python'
 let g:netrw_dirhist_3='/Volumes/HDD/Users/talipovmr/Dropbox/q-Reference/python-library/Proteomics'
+let g:netrw_dirhist_4='/Volumes/HDD/Users/talipovmr/.vim/bundle/Vim-R'
