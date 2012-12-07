@@ -72,7 +72,8 @@ function RSetDefaultValue(var, val)
 endfunction
 
 function ReplaceUnderS()
-    if (&filetype == "rnoweb" || &filetype == "tex") && RnwIsInRCode() == 0
+    let TurnOff = 1
+    if ((&filetype == "rnoweb" || &filetype == "tex") && RnwIsInRCode() == 0) || TurnOff == 1
         let isString = 1
     else
         let j = col(".")

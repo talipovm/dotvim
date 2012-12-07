@@ -36,7 +36,7 @@ let python_highlight_all = 1
 
 " Coloration
 syntax on
-colorscheme Peacock
+" colorscheme Peacock
 
 
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
